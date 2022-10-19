@@ -26,7 +26,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState ('About');
   return (
 <div className='container' style={{color: 'black'}}>
-  <nav style={{ color: 'black'}}>
+  <nav style={{ backgroundColor: 'black', color: 'white'}}>
     <a onClick={() => setCurrentPage('About')}>
       About
     </a>
