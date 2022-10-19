@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import './App.css';
-import About from '.componets/pages/About';
-import Portfolio from '.componets/pages/Portfolio';
-import Contact from '.componets/pages/Contact';
-import Resume from '.componets/pages/Resume';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 
 function App() {
