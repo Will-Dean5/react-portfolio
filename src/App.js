@@ -1,26 +1,49 @@
 import { useState } from 'react';
 
 import './App.css';
-import About from './pages/About';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume';
+import About from './components/pages/About';
+import Portfolio from './components/pages/Portfolio';
+import Contact from './components/pages/Contact';
+import Resume from './components/pages/Resume';
 
+
+function renderPage(currentPage) {
+  if (currentPage === 'About') {
+    return <About />
+  }
+  if (currentPage === 'Contact') {
+    return <Contact />
+  }
+  if (currentPage === 'Portfolio') {
+    return <Portfolio />
+  }
+  if (currentPage === 'Resume') {
+    return <Resume />
+  }
+};
 
 function App() {
   const [currentPage, setCurrentPage] = useState ('About');
-  if (currentPage === 'About') {
-    <About />
-  }
-  if (currentPage === 'Contact') {
-    <Contact />
-  }
-  if (currentPage === 'Portfolio') {
-    <Portfolio />
-  }
-  if (currentPage === 'Resume') {
-    <Resume />
-  }
+  return (
+<div className='container' style={{color: 'black'}}>
+  <nav style={{ color: 'black'}}>
+    <a onClick={() => setCurrentPage('About')}>
+      About
+    </a>
+    <a onClick={() => setCurrentPage('Contact')}>
+      Contact
+    </a>
+    <a onClick={() => setCurrentPage('Portfolio')}>
+      Portfolio
+    </a>
+    <a onClick={() => setCurrentPage('Resume')}>
+      Resume
+    </a>
+  </nav>
+  {renderPage(currentPage)}
+</div>
+  )
+  
 }
 
 export default App;
