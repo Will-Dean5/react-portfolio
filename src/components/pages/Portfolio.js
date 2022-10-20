@@ -1,4 +1,7 @@
 import React from 'react'
+let img1 = require('../../images/solar.png');
+let img2 = require('../../images/game.png');
+let img3 = require('../../images/note.png');
 
 const Portfolio = () => {
   return (
@@ -6,7 +9,7 @@ const Portfolio = () => {
       <h1 style={{ color: 'white', display: 'flex', justifyContent: 'center' }}>Portfolio</h1>
       <div className="card" style={{ width: '18rem;', color: 'white', display: 'flex', justifyContent: 'center' }}>
         <a href='https://young-oasis-85311.herokuapp.com/'>
-          <img style={{ marginLeft: '250px' }} src="../../images/solar.png" className="card-img-top" alt="Solar Clicker" />
+          <img style={{ marginLeft: '250px' }} src={img1} className="card-img-top" alt="Solar Clicker" />
         </a>
         <div className="card-body" style={{ marginLeft: '25px' }}>
           <h1 style={{ marginLeft: '50px', marginRight: '400px' }}>Solar Clicker</h1>
@@ -15,7 +18,7 @@ const Portfolio = () => {
       </div>
       <div className="card" style={{ width: '18rem;', color: 'white', display: 'flex', justifyContent: 'center' }}>
         <a href='https://supernaldeity.github.io/gamers-checkpoint/'>
-          <img style={{ marginLeft: '250px' }} src='../../images/game.png' className="card-img-top" alt="Gamers Checkpoint" />
+          <img style={{ marginLeft: '250px' }} src={img2} className="card-img-top" alt="Gamers Checkpoint" />
         </a>
         <div className="card-body" style={{ marginLeft: '25px' }}>
           <h1 style={{ marginLeft: '50px', marginRight: '400px' }}>Gamers Checkpoint</h1>
@@ -23,7 +26,7 @@ const Portfolio = () => {
         </div>
       </div><div className="card" style={{ width: '18rem;', color: 'white', display: 'flex', justifyContent: 'center' }}>
         <a href='https://tranquil-shelf-11284.herokuapp.com/'>
-          <img style={{ marginLeft: '250px' }} src="../../images/note.png" className="card-img-top" alt="Note Taker" />
+          <img style={{ marginLeft: '250px' }} src={img3} className="card-img-top" alt="Note Taker" />
         </a>
         <div className="card-body" style={{ marginLeft: '25px' }}>
           <h1 style={{ marginLeft: '50px', marginRight: '400px' }}>Note Taker</h1>

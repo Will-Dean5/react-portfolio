@@ -9,4 +9,4 @@ This is a project to show my portfolio to potential employers. This includes pro
 
 ## visuals
 
-![Portfolio](./public/images/Screen%20Shot%202022-10-20%20at%203.22.11%20PM.png)
+![Portfolio](./src/images/Screen%20Shot%202022-10-20%20at%203.22.11%20PM.png)
