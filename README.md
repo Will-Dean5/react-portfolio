@@ -1,6 +1,6 @@
 # react-portfolio
 
-[github](https://github.com/Will-Dean5/react-portfolio)        [deployed]()
+[github](https://github.com/Will-Dean5/react-portfolio)        [deployed](https://will-dean5.github.io/react-portfolio/)
 
 
 ## description
