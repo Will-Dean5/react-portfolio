@@ -26,7 +26,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState ('About');
   return (
 <div className='container' style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHRoZW1lfGVufDB8fDB8fA%3D%3D&w=1000&q=80)', height: '100vh'}}>
-  <nav style={{ backgroundColor: 'black', color: 'white', display: 'flex', justifyContent: 'space-evenly'}}>
+  <nav style={{ backgroundColor: 'black', color: 'white', display: 'flex', justifyContent: 'space-evenly', fontSize: '20px'}}>
     <a onClick={() => setCurrentPage('About')}>
       About
     </a>
